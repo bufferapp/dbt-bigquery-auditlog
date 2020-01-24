@@ -12,7 +12,3 @@ clean-targets:
 models:
   bigquery_auditlog:
     materialized: view
-
-    vars:
-      # "bigquery_auditlog_dataset.data_access": TABLE OR {{ REF() }}
-      # "bigquery_auditlog_dataset.activity": TABLE OR {{ REF() }}
