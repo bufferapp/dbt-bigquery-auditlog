@@ -1,0 +1,18 @@
+name: "bigquery_auditlog"
+version: "0.0.1"
+
+source-paths: ["models"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+models:
+  bigquery_auditlog:
+    materialized: view
+
+    vars:
+      # "bigquery_auditlog_dataset.data_access": TABLE OR {{ REF() }}
+      # "bigquery_auditlog_dataset.activity": TABLE OR {{ REF() }}
