@@ -23,7 +23,7 @@ Include the following in your `packages.yml` file:
 ```yml
 packages:
   - git: "https://github.com/bufferapp/dbt-bigquery-auditlog.git"
-    revision: 0.0.1
+    revision: 0.0.2
 ```
 
 Run `dbt deps` to install the package.

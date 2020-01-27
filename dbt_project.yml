@@ -1,5 +1,5 @@
 name: "bigquery_auditlog"
-version: "0.0.1"
+version: "0.0.2"
 
 source-paths: ["models"]
 macro-paths: ["macros"]
