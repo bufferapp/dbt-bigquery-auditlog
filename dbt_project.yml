@@ -1,5 +1,8 @@
 name: "bigquery_auditlog"
-version: "1.0.0"
+version: "1.0.1"
+
+require-dbt-version: ">=0.17.0"
+config-version: 2
 
 source-paths: ["models"]
 macro-paths: ["macros"]
@@ -11,4 +14,4 @@ clean-targets:
 
 models:
   bigquery_auditlog:
-    materialized: view
+    +materialized: view

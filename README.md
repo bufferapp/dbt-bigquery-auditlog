@@ -23,7 +23,7 @@ Include the following in your `packages.yml` file:
 ```yml
 packages:
   - git: "https://github.com/bufferapp/dbt-bigquery-auditlog.git"
-    revision: 0.0.2
+    revision: 1.0.1
 ```
 
 Run `dbt deps` to install the package.
@@ -31,9 +31,7 @@ Run `dbt deps` to install the package.
 Add the source tables to your `dbt_project.yml`:
 
 ```yml
-models:
-  bigquery_auditlog:
-    vars:
-      "bigquery_auditlog_dataset.data_access": TABLE
-      "bigquery_auditlog_dataset.activity": TABLE
+vars:
+  "bigquery_auditlog_dataset.data_access": TABLE
+  "bigquery_auditlog_dataset.activity": TABLE
 ```
